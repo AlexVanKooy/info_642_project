@@ -1,0 +1,104 @@
+{
+  "2 Fast 4 Gnomz": {
+    "title": "2 Fast 4 Gnomz",
+    "type": "Video game",
+    "description": "2 Fast 4 Gnomz is a platform video game developed and published by Polish studio QubicGames in North America and Europe, with Flyhigh Works publishing it in Japan. It was released on the WiiWare for Wii in 2012, and for the eShop for the Nintendo 3DS in late 2012 to early 2013.",
+    "source": {
+      "name": "Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/2_Fast_4_Gnomz"
+    },
+    "editorial_reviews": [
+      {
+        "title": "Metacritic",
+        "rating": "65%",
+        "link": "https://www.metacritic.com/game/3ds/2-fast-4-gnomz"
+      },
+      {
+        "title": "Nintendo Life",
+        "rating": "7/10",
+        "link": "https://www.nintendolife.com/reviews/eshop/2_fast_4_gnomz_eshop"
+      }
+    ],
+    "initial_release_date": "February 23, 2012",
+    "developer": "QubicGames",
+    "composer": "Data Not Available",
+    "series": "Data Not Available",
+    "publisher": "Data Not Available",
+    "platforms": "Wii, Nintendo 3DS"
+  },
+  "2048": {
+    "title": "2048",
+    "type": "Video game",
+    "description": "2048 is a single-player sliding block puzzle game designed by Italian web developer Gabriele Cirulli.",
+    "source": {
+      "name": "Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/2048_(video_game)"
+    },
+    "editorial_reviews": [
+      {
+        "title": "Metacritic",
+        "rating": "60%",
+        "link": "https://www.metacritic.com/game/3ds/2048"
+      }
+    ],
+    "initial_release_date": "March 9, 2014",
+    "developer": "Gabriele Cirulli",
+    "composer": "Data Not Available",
+    "series": "Data Not Available",
+    "publisher": "Data Not Available",
+    "platforms": "Android, Microsoft Windows, iOS, Nintendo 3DS"
+  },
+  "7th Dragon III Code: VFD": {
+    "title": "7th Dragon III Code: VFD",
+    "type": "Video game",
+    "description": "7th Dragon III Code: VFD is a dungeon crawler for the Nintendo 3DS released by SEGA in 2015. It is the fourth 7th Dragon game and the second on Nintendo devices with the other being the original 7th Dragon on DS.",
+    "source": "Data Not Available",
+    "editorial_reviews": [
+      {
+        "title": "GameStop",
+        "rating": "4.5/5",
+        "link": "https://www.gamestop.com/video-games/more-platforms/nintendo-3ds/games/products/7th-dragon-iii-code-vfd/10128693.html"
+      },
+      {
+        "title": "Metacritic",
+        "rating": "76%",
+        "link": "https://www.metacritic.com/game/3ds/7th-dragon-iii-code-vfd"
+      }
+    ],
+    "initial_release_date": "October 15, 2015",
+    "developer": "Sega",
+    "composer": "Data Not Available",
+    "series": "7th Dragon",
+    "publisher": "Sega",
+    "platforms": "Data Not Available"
+  },
+  "80's Overdrive": {
+    "title": "80's Overdrive",
+    "type": "Console game",
+    "description": "80's OVERDRIVE is a 2D pixelart racing game, designed to take you back in time to when 8 and 16 bit consoles and arcade games ruled the world. Compete against opponents in career mode to unlock new races, buy new cars and upgrade them with state-of-the-art technologies!",
+    "source": "Data Not Available",
+    "editorial_reviews": [
+      {
+        "title": "Metacritic",
+        "rating": "70%",
+        "link": "https://www.metacritic.com/game/3ds/80s-overdrive"
+      },
+      {
+        "title": "Nintendo Life",
+        "rating": "8/10",
+        "link": "https://www.nintendolife.com/reviews/3ds-eshop/80s_overdrive"
+      },
+      {
+        "title": "Bonus Stage",
+        "rating": "7/10",
+        "link": "https://www.bonusstage.co.uk/2020/05/12/80s-overdrive-review/"
+      }
+    ],
+    "initial_release_date": "December 3, 2017",
+    "developer": "Insane Code",
+    "composer": "Data Not Available",
+    "series": "Data Not Available",
+    "publisher": "Data Not Available",
+    "platforms": "Nintendo Switch, Nintendo 3DS"
+  }
+}
