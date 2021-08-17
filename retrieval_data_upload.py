@@ -1,7 +1,9 @@
 import json
 import os
-from elasticsearch import Elasticsearch
+import ssl
 import requests
+from elasticsearch import Elasticsearch
+from elasticsearch.connection import create_ssl_context
 from requests.auth import HTTPBasicAuth
 
 
@@ -52,31 +54,43 @@ def collect_and_set_mapped_fields(j_data, mapped_fields):
     return final_data
     
 def make_ES_payload(j_data):
+    doc_counter = 1
     for entry in j_data.values():
         yield{
-            "_index":"av667_info624_202004_project"
-        }
+            "_index":"av667_info624_202004_project",
+            "_type":"document",
+            "_id":doc_counter,
+            'doc':entry}
 
                     
             
         
 
 def main():
-    es = Elasticsearch({"host":"tux-es1.cci.drexel.edu",
-                        "port":9200})
+    context = create_ssl_context()
+    context.check_hostname = False
+    context.verify_mode = ssl.CERT_NONE
+    es = Elasticsearch(['tux-es1.cci.drexel.edu','tux-es2.cci.drexel.edu','tux-es3.cci.drexel.edu'],
+                       http_auth=('user','secret'), # working on real encrypted passwords
+                       scheme="https",
+                        port=9200,
+                        ssl_context = context)
     
+    # print(es.info())
     
                        
     mapped_fields = ["title", "developer","type","description", 
                      "source", "editorial_reviews", "initial_release_date","platforms",
                      "composer","publisher","series"]
     #Already trimmed the file to only have the games with actual data
-    game_data = get_json_data('jdata_minus_empties.json')
     # drop_empty_data(game_data, True)
-    game_data = collect_and_set_mapped_fields(game_data, mapped_fields)
-    print('ready to start uploading?')
+    game_data = get_json_data('jdata_minus_empties.json')
     
-# es.get(index="av667_info624_202004_articles",id=16)
+    game_data = collect_and_set_mapped_fields(game_data, mapped_fields)
+    one_payload = make_ES_payload(game_data)
+    print('ready to start uploading?')
+
+
 
 
 
