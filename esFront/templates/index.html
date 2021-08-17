@@ -11,13 +11,15 @@
     <div class="logo">
       <img alt="Gaamle" src="../static/img/logo.png">
     </div>
+    <form method = "POST">
     <div class="bar">
-      <input class="searchbar" type="text" title="Search">
+      <input class="searchbar" type="text" title="Search" name="text" value="{{ text }}" autocomplete="off">
       <a href="#"> <img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
     </div>
     <div class="buttons">
-      <button class="button" type="button">Gaamle Search</button>
-      <button class="button" type="button">I'm Feeling Lucky</button>
+      <input class="button" type="submit" name="searchBtn" value="Gaamle Search"></input>
+      <input class="button" type="submit" name="searchBtn" value="I'm Feeling Lucky"></input>
      </div>
+    </form>
   </body>
   </center>
