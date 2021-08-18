@@ -11,8 +11,13 @@ def getQuery():
     if request.method == "POST":
         if request.form['searchBtn'] == 'Gaamle Search':
             text = request.form['text']
-            print("gamle search - ",text)
+            #TODO put code for parsing ES here
+            print("gamle search -",text)
         elif request.form['searchBtn'] == "I'm Feeling Lucky":
             text = request.form['text']
-            print("feelin lucky - ", text)
-    return render_template('index.html',text=text)
+            #TODO put code for parsing ES here
+            print("feelin lucky -", text)
+    if text == "":
+        return render_template('index.html',text=text)
+    else:
+        return render_template('search.html',text=text)
