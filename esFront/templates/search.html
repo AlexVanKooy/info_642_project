@@ -11,8 +11,10 @@
 <div id="header">
   <div id="topbar">
     <img id="searchbarimage" src="../static/img/search_logo.png" />
+    <form method = "POST">
     <div id="searchbar" type="text">
-      <input id="searchbartext" type="text" value="computer engineering mutex concept" />
+        <input id="searchbartext" type="text" name="text" value="{{ text }}" autocomplete="off">
+        <input name="searchBtn" type="submit" value="Gaamle Search" style="display: none" />
       <button id="searchbarmic">
         <img src="../static/img/x.png" />
       </button>
@@ -24,6 +26,7 @@
         </svg>
       </button>
     </div>
+    </form>
 
   </div>
   <div id="optionsbar">
